@@ -1,0 +1,216 @@
+<<<<<<< HEAD
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.old-paper-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 25px;
+}
+
+.old-paper-container h1{
+    font-size: 2rem;
+}
+
+.tab {
+    display: none;
+  }
+  .tab.active {
+    display: block;
+  }
+  .tab-button {
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    margin-top: 25px;
+    font-size: 20px;
+  }
+  .tab-button.active {
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+
+th{
+ border: 1px solid black;
+ font-size: 1.4rem;
+ height: 35px;
+}
+td{
+ border: 1px solid black;
+ text-align: center;
+ text-decoration: none;
+ font-size: 1.2rem;
+}
+tr{
+    height: 50px;
+    width: 500px
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.tab{
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, .28);
+}
+
+h1 , p{
+    text-align: center;
+}
+p{
+margin-top: 15px;
+padding: 8px;
+font-size: 20px;
+}
+
+.table-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.tab-btn{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5rem;
+}
+.tab-btn .tab-button:hover{
+    color: #fff;
+    background-color: black;
+}
+a{
+    text-decoration: none;
+}
+p a{
+    color: black;
+    text-decoration: none;
+}
+p a:hover{
+    color: blue;
+    text-decoration: none;
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.old-paper-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 25px;
+}
+
+.old-paper-container h1{
+    font-size: 2rem;
+}
+
+.tab {
+    display: none;
+  }
+  .tab.active {
+    display: block;
+  }
+  .tab-button {
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    margin-top: 25px;
+    font-size: 20px;
+  }
+  .tab-button.active {
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+
+th{
+ border: 1px solid black;
+ font-size: 1.4rem;
+ height: 35px;
+}
+td{
+ border: 1px solid black;
+ text-align: center;
+ text-decoration: none;
+ font-size: 1.2rem;
+}
+tr{
+    height: 50px;
+    width: 500px
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.tab{
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, .28);
+}
+
+h1 , p{
+    text-align: center;
+}
+p{
+margin-top: 15px;
+padding: 8px;
+font-size: 20px;
+}
+
+.table-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.tab-btn{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5rem;
+}
+.tab-btn .tab-button:hover{
+    color: #fff;
+    background-color: black;
+}
+a{
+    text-decoration: none;
+}
+p a{
+    color: black;
+    text-decoration: none;
+}
+p a:hover{
+    color: blue;
+    text-decoration: none;
+>>>>>>> origin/main
+}

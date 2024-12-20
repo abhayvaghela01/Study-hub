@@ -1,0 +1,261 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Hub | Contribution</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" href="../logo.png" />
+
+    <style>
+      /* Styles for file input */
+      #fileInput {
+        display: none; /*Hide the file input */
+      }
+      .file-upload-btn {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      .file-upload-btn:hover {
+        background-color: #45a049;
+      }
+      /* Style for contribution card */
+      .contribution-card {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+      }
+      .contribution-card img {
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+      }
+      .contribution-card .description {
+        flex: 1;
+      }
+      .contribution-card .download-link {
+        margin-top: 10px;
+      }
+      .upload {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      p {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div id="logo">
+        <img src="../logo.png" alt="StudyHub" />
+      </div>
+      <ul>
+        <li><a href="../index.html" class="active">Home</a></li>
+        <li><a href="../Syllabus/syllabus.html">Syllabus</a></li>
+        <li><a href="../Notes/notes.html">Books</a></li>
+        <li><a href="../OldPapers/oldPaper.html">Old Papers</a></li>
+        <li><a href="../Contribution/contribution.html">Contribution</a></li>
+      </ul>
+    </nav>
+    <div class="upload">
+      <p>Share Your Knowledge, Share Your PDFs</p>
+      <!-- File upload button -->
+      <label for="fileInput" class="file-upload-btn">Choose PDF File</label>
+      <input type="file" id="fileInput" onchange="handleFile(event)" />
+      <div>
+        <!-- Display contributions -->
+        <div id="contributions"></div>
+      </div>
+    </div>
+    <script>
+      function handleFile(event) {
+        const file = event.target.files[0];
+        const reader = new FileReader();
+
+        reader.onload = function (e) {
+          const contribution = {
+            name: file.name,
+            dataURL: e.target.result,
+          };
+          displayContribution(contribution);
+        };
+
+        reader.readAsDataURL(file);
+      }
+
+      function displayContribution(contribution) {
+        const contributionsDiv = document.getElementById("contributions");
+        const contributionCard = document.createElement("div");
+        contributionCard.classList.add("contribution-card");
+        contributionCard.innerHTML = `
+        <img src="../pdf-logo.png" alt="PDF Logo">
+        <div class="description">
+          <p>${contribution.name}</p>
+          <p>File has been successfully uploaded.</p>
+          <a href="${contribution.dataURL}" class="download-link" download>Download</a>
+        </div>
+      `;
+        contributionsDiv.appendChild(contributionCard);
+        // saveData();
+      }
+    //   function saveData() {
+    //     localStorage.setItem(
+    //       "data",
+    //       document.getElementById("contributions").innerHTML
+    //     );
+    //   }
+
+    //   // Function to show saved data from localStorage
+    //   function showPdf() {
+    //     document.getElementById("contributions").innerHTML =
+    //       localStorage.getItem("data");
+    //   }
+
+    //   showPdf();
+    </script>
+  </body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Hub | Contribution</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" href="../logo.png" />
+
+    <style>
+      /* Styles for file input */
+      #fileInput {
+        display: none; /*Hide the file input */
+      }
+      .file-upload-btn {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      .file-upload-btn:hover {
+        background-color: #45a049;
+      }
+      /* Style for contribution card */
+      .contribution-card {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+      }
+      .contribution-card img {
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+      }
+      .contribution-card .description {
+        flex: 1;
+      }
+      .contribution-card .download-link {
+        margin-top: 10px;
+      }
+      .upload {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      p {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div id="logo">
+        <img src="../logo.png" alt="StudyHub" />
+      </div>
+      <ul>
+        <li><a href="../index.html" class="active">Home</a></li>
+        <li><a href="../Syllabus/syllabus.html">Syllabus</a></li>
+        <li><a href="../Notes/notes.html">Books</a></li>
+        <li><a href="../OldPapers/oldPaper.html">Old Papers</a></li>
+        <li><a href="../Contribution/contribution.html">Contribution</a></li>
+      </ul>
+    </nav>
+    <div class="upload">
+      <p>Share Your Knowledge, Share Your PDFs</p>
+      <!-- File upload button -->
+      <label for="fileInput" class="file-upload-btn">Choose PDF File</label>
+      <input type="file" id="fileInput" onchange="handleFile(event)" />
+      <div>
+        <!-- Display contributions -->
+        <div id="contributions"></div>
+      </div>
+    </div>
+    <script>
+      function handleFile(event) {
+        const file = event.target.files[0];
+        const reader = new FileReader();
+
+        reader.onload = function (e) {
+          const contribution = {
+            name: file.name,
+            dataURL: e.target.result,
+          };
+          displayContribution(contribution);
+        };
+
+        reader.readAsDataURL(file);
+      }
+
+      function displayContribution(contribution) {
+        const contributionsDiv = document.getElementById("contributions");
+        const contributionCard = document.createElement("div");
+        contributionCard.classList.add("contribution-card");
+        contributionCard.innerHTML = `
+        <img src="../pdf-logo.png" alt="PDF Logo">
+        <div class="description">
+          <p>${contribution.name}</p>
+          <p>File has been successfully uploaded.</p>
+          <a href="${contribution.dataURL}" class="download-link" download>Download</a>
+        </div>
+      `;
+        contributionsDiv.appendChild(contributionCard);
+        // saveData();
+      }
+    //   function saveData() {
+    //     localStorage.setItem(
+    //       "data",
+    //       document.getElementById("contributions").innerHTML
+    //     );
+    //   }
+
+    //   // Function to show saved data from localStorage
+    //   function showPdf() {
+    //     document.getElementById("contributions").innerHTML =
+    //       localStorage.getItem("data");
+    //   }
+
+    //   showPdf();
+    </script>
+  </body>
+</html>
+>>>>>>> origin/main

@@ -1,0 +1,433 @@
+<<<<<<< HEAD
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #e7e7e7;
+}
+/* Navigation Bar */
+.navbar{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0px;
+    gap: 3rem;
+}
+.navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+    top: 0px;
+    left: 0px;
+}
+/* Logo */
+#logo img{
+    width: 90px;
+    height: 90px;
+    position: relative;
+}
+/* Navigation List */
+.navbar ul{
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    gap: 3rem;
+}
+.navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+.navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.navbar ul li a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+/* Main Container */
+.container{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    margin-top: 45px;
+    gap: 3rem;
+}
+#cse-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#cse-section img{
+    height: 35vh;
+    width: 35vw;
+}
+#cse-head{
+    height: 35vh;
+    width: 35vw;   
+    background: linear-gradient(180deg, #879da1 0%, #e7e7e7 100%);
+}
+#cse-head h1{
+    text-align: center;
+    font-size: 2rem;
+    margin: 40px;
+}
+#cse-buttons{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+#cse-buttons button{
+    padding: 12px;
+    border: none;
+    background-color: coral;
+    border-radius: 25px;
+}
+#it-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#it-section img{
+    height: 35vh;
+    width: 35vw;
+}
+#it-head{
+    height: 35vh;
+    width: 35vw;   
+    background: linear-gradient(180deg, #879da1 0%, #e7e7e7 100%);
+}
+#it-head h1{
+    text-align: center;
+    font-size: 2rem;
+    margin: 40px;
+}
+#it-buttons{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+#it-buttons button{
+    padding: 12px;
+    border: none;
+    background-color: coral;
+    border-radius: 25px;
+}
+.container button a{
+    text-decoration: none;
+    color: black;
+}
+.container button a:hover{
+    cursor: pointer;
+    color: white;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    padding: 2px;
+}
+@media only screen and (max-width:800px) {
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .navbar ul li a {
+        font-family: courier new;
+        font-weight: bold;
+    }
+
+    #it-head h1 ,#cse-head h1{
+        text-align: center;
+        font-size: 1.57rem;
+        text-align: center;
+        margin: 0px;
+    }
+
+    #it-head , #cse-head{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #cse-section, #it-section{
+        flex-direction: column;
+    }
+    #cse-buttons,#it-buttons  {
+        display: flex;
+        flex-direction: column;
+    }
+      #cse-section img, #it-section img {
+        height: 30vh;
+        width: 94vw;
+    }
+
+    #cse-head,#it-head {
+        background: linear-gradient(0deg, #879da1 0%, #e7e7e7 100%);
+        height: 30vh;
+        width: 94vw;
+    }
+    #cse-buttons button,  #it-buttons button {
+        padding: 12px;
+        border: none;
+        /* background-color: #322ceb; */
+        border-radius: 4px;
+        width: 78%;
+        height: 13px;
+        padding: 1px;
+        margin: -3px 0px;
+        font-size: 14px;
+        height: 29px;
+        /* font-family: courier new; */
+        color: white;
+    }
+}
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #e7e7e7;
+}
+/* Navigation Bar */
+.navbar{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0px;
+    gap: 3rem;
+}
+.navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+    top: 0px;
+    left: 0px;
+}
+/* Logo */
+#logo img{
+    width: 90px;
+    height: 90px;
+    position: relative;
+}
+/* Navigation List */
+.navbar ul{
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    gap: 3rem;
+}
+.navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+.navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.navbar ul li a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+/* Main Container */
+.container{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    margin-top: 45px;
+    gap: 3rem;
+}
+#cse-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#cse-section img{
+    height: 35vh;
+    width: 35vw;
+}
+#cse-head{
+    height: 35vh;
+    width: 35vw;   
+    background: linear-gradient(180deg, #879da1 0%, #e7e7e7 100%);
+}
+#cse-head h1{
+    text-align: center;
+    font-size: 2rem;
+    margin: 40px;
+}
+#cse-buttons{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+#cse-buttons button{
+    padding: 12px;
+    border: none;
+    background-color: coral;
+    border-radius: 25px;
+}
+#it-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#it-section img{
+    height: 35vh;
+    width: 35vw;
+}
+#it-head{
+    height: 35vh;
+    width: 35vw;   
+    background: linear-gradient(180deg, #879da1 0%, #e7e7e7 100%);
+}
+#it-head h1{
+    text-align: center;
+    font-size: 2rem;
+    margin: 40px;
+}
+#it-buttons{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+#it-buttons button{
+    padding: 12px;
+    border: none;
+    background-color: coral;
+    border-radius: 25px;
+}
+.container button a{
+    text-decoration: none;
+    color: black;
+}
+.container button a:hover{
+    cursor: pointer;
+    color: white;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    padding: 2px;
+}
+@media only screen and (max-width:800px) {
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .navbar ul li a {
+        font-family: courier new;
+        font-weight: bold;
+    }
+
+    #it-head h1 ,#cse-head h1{
+        text-align: center;
+        font-size: 1.57rem;
+        text-align: center;
+        margin: 0px;
+    }
+
+    #it-head , #cse-head{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #cse-section, #it-section{
+        flex-direction: column;
+    }
+    #cse-buttons,#it-buttons  {
+        display: flex;
+        flex-direction: column;
+    }
+      #cse-section img, #it-section img {
+        height: 30vh;
+        width: 94vw;
+    }
+
+    #cse-head,#it-head {
+        background: linear-gradient(0deg, #879da1 0%, #e7e7e7 100%);
+        height: 30vh;
+        width: 94vw;
+    }
+    #cse-buttons button,  #it-buttons button {
+        padding: 12px;
+        border: none;
+        /* background-color: #322ceb; */
+        border-radius: 4px;
+        width: 78%;
+        height: 13px;
+        padding: 1px;
+        margin: -3px 0px;
+        font-size: 14px;
+        height: 29px;
+        /* font-family: courier new; */
+        color: white;
+    }
+}
+>>>>>>> origin/main
